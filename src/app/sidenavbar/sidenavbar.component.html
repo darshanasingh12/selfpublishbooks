@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   </head>
+<body>
+  <div class="sidebar">
+    
+    <ul class="nav-list">
+      <li>
+        <a routerLink="/dashboard" routerLinkActive="active">
+          <i class='bx bx-grid-alt'></i>
+          <span class="links_name">Dashboard</span>
+        </a>
+         <span class="tooltip">Dashboard</span>
+      </li>
+      <li>
+        <a routerLink="/steps" routerLinkActive="active">
+          <i class='bx bx-list-ol'></i>
+          <span class="links_name">Steps</span>
+        </a>
+         <span class="tooltip">Steps</span>
+      </li>
+      <li>
+        <a routerLink="/packages" routerLinkActive="active">
+          <i class='bx bx-package'></i>
+          <span class="links_name">Packages</span>
+        </a>
+         <span class="tooltip">Packages</span>
+      </li>
+      <li>
+        <a routerLink="/books" routerLinkActive="active">
+          <i class='bx bx-book-content'></i>
+          <span class="links_name">Books</span>
+        </a>
+         <span class="tooltip">Books</span>
+      </li>
+      <li>
+        <a routerLink="/covers" routerLinkActive="active">
+          <i class='bx bx-food-menu' ></i>
+          <span class="links_name">Cover Templates</span>
+        </a>
+        <span class="tooltip">Cover Templates</span>
+      </li>
+      <li>
+       <a routerLink="/publish" routerLinkActive="active">
+         <i class='bx bx-book-open' ></i>
+         <span class="links_name">Publish</span>
+       </a>
+       <span class="tooltip">Publish</span>
+     </li>
+     <li>
+      <a routerLink="/form" routerLinkActive="active">
+        <i class='bx bx-book-add' ></i>
+        <span class="links_name">Manuscript</span>
+      </a>
+      <span class="tooltip">Manuscript</span>
+    </li>
+     <li>
+      <a routerLink="/payment" routerLinkActive="active">
+        <i class='bx bx-credit-card' ></i>
+        <span class="links_name">Payment</span>
+      </a>
+      <span class="tooltip">Payment</span>
+    </li>
+     <li>
+      <a routerLink="/royalty" routerLinkActive="active">
+        <i class='bx bx-calculator' ></i>
+        <span class="links_name">Calculate royalty</span>
+      </a>
+      <span class="tooltip">Calculate royalty</span>
+    </li>
+    </ul>
+  </div>
+ 
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();//calling the function(optional)
+  });
+
+  searchBtn.addEventListener("click", ()=>{ // Sidebar open when you click on the search iocn
+    sidebar.classList.toggle("open");
+    menuBtnChange(); //calling the function(optional)
+  });
+
+  // following are the code to change sidebar button(optional)
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");//replacing the iocns class
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");//replacing the iocns class
+   }
+  }
+  </script>
+</body>
+</html>

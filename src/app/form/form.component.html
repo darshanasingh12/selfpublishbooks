@@ -1,0 +1,45 @@
+<app-main-nav></app-main-nav>
+<app-sidenavbar></app-sidenavbar>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-bootstrap/0.13.3/ui-bootstrap-tpls.js"> </script>
+<div class=" container p-5">
+<div class="container  p-5"> 
+<div class="card container p-5 mt-5">
+<div class="card-body">
+<h5 class="card-title">Manuscript format</h5>
+<h6 class="card-subtitle mb-2 text-muted">NOTE : Please make sure your PDF is in the following format</h6>
+<div class="card-text">
+<ol>
+  <li>1st</li>
+  <ul style="list-style-type:disc;">
+    <li>Author Name</li>
+    <li>Book Name</li>
+    <li>Cover Template Code</li>
+    <li>Summary</li>
+  </ul>
+  <li>2nd : Dedication if any </li>
+  <li>3rd : Table of contents </li>
+  <li>4th : Story </li>
+  <li>5th : About the author </li>
+</ol>
+<br><br> <br>
+<div class="container text-center ">
+  <form ngNativeValidate [formGroup]="angForm" (ngSubmit)="postdata(angForm) " >
+    <div class="mb-3">
+      <input type="email" formControlName="email" class="form-control"  placeholder="Enter Email Address">
+    </div>
+    <div class="mb-3">
+      <input type="password" formControlName="password" class="form-control" placeholder="Enter Your OTP"> <br>
+    <button type="submit" class="btn btn-primary">Submit</button> <br> <br> <br>
+  </div> 
+  </form>
+  </div>
+</div>
+</div>
+
+</div>
+</div>
+
+    
+
+
+

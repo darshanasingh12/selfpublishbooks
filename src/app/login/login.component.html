@@ -1,0 +1,31 @@
+<app-main-nav></app-main-nav>
+<section class="loginpage">
+ 
+<div class="logincontent">
+
+<h2 class="text-center"><b>Login To Your Dashboard !!!</b></h2>  
+<div class="row">
+<div class="col-md-4">
+</div>
+<div class="col-md-8 col-md-offset-5">
+<div class="jumbotron">
+<form ngNativeValidate [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+<div class="form-group">
+<label for="email"><br><br> Email</label>
+<input type="email" required name="email" formControlName="email" autocomplete="off" class="form-control input-sm" placeholder="Email"
+oninvalid="this.setCusomValidity('Please enter your email')" oninput="this.setCusomValidity('')">
+</div> <br>
+<div class="form-group">
+<label for="Password">Password</label>
+<input type="password" required name="Password" formControlName="password" autocomplete="off" class="form-control input-sm" placeholder="Password">
+</div> <br> 
+<button type="submit" class="btn btn-success" >Login</button>
+</form>
+</div>
+</div>
+<div class="col-md-5">
+</div>
+</div>
+</div>
+</section>
+

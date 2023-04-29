@@ -1,0 +1,140 @@
+<app-main-nav></app-main-nav>
+<app-sidenavbar></app-sidenavbar>
+<body>
+<div class="container mt-5 p-1">
+
+  <div class="jumbotron">
+    <h1 class="text-center mt-5"><b>Cover Templates </b></h1>
+    <p class="text-center">Dear Authors, if you wish to select any of the following cover templates then please note their cover codes 
+		and fill them accordingly when asked while publishing your book
+	</p>
+  <p class="text-center">If you'll like to design your own template then scroll below. <br> *Terms & Conditions Applied <br>
+   </p>
+  </div> <br>
+
+  <div class="row">
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template1.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-historic</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template2.jpg"  class="img-thumbnail grayscale">
+        <figcaption>Cover-eye</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template3.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-mirror</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template4.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-rom</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template5.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-plain</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template6.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-night</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template7.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-stars</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template8.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-window</figcaption>
+      </figure>
+    </div>
+    <div class="col-sm-6 col-md-4 col-lg-3">
+      <figure>
+        <img src="../../assets/template9.jpg" class="img-thumbnail grayscale">
+        <figcaption>Cover-cottage</figcaption>
+      </figure>
+    </div>
+  </div>
+  <div class="wrapper-box">
+    <div class="container">
+      <h2 class="text-center mb-5"><b>Custom Cover Form</b></h2>
+      <div class="row">
+        <div class="col-md-6 offset-md-3">
+          <form  ngNativeValidate [formGroup]="FormData" (ngSubmit)="onSubmit(FormData.value)">
+            <div class="form-group">
+              <label for="Email">Email</label>
+              <input required
+                type="email"
+                class="form-control"
+                name="Email"
+                aria-describedby="emailHelp"
+                placeholder="Enter email"
+                formControlName="Email"
+                oninvalid="this.setCusomValidity('Please enter your email')" oninput="this.setCusomValidity('')"
+              />
+              <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+            </div>
+            <div class="form-group">
+              <label for="fname">Full Name</label>
+              <input required
+                type="text"
+                class="form-control"
+                name="fname"
+                placeholder="First Name"
+                formControlName="FirstName"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+              />
+            </div>
+            <div class="form-group">
+              <label for="lname">Last Name</label>
+              <input required
+                type="text"
+                class="form-control"
+                name="lname"
+                placeholder="Last Name"
+                formControlName="LastName"
+                onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"
+              />
+            </div>
+  
+            <div class="form-group">
+              <label for="Description">Description</label>
+              <textarea required
+                class="form-control"
+                formControlName="Description"
+                name="Description"
+                minlength="30"
+                maxlength="200"
+              >
+              </textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary"
+              
+            >
+              Submit
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+
+</body>

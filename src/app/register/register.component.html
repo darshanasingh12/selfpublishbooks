@@ -1,0 +1,34 @@
+<app-main-nav></app-main-nav>
+<h2 class="text-center mt-5 p-5"><b>Registration</b></h2>
+<div class="row">
+<div class="col-md-3">
+</div>
+<div class="col-md-6 col-md-offset-3">
+<div class="jumbotron">
+<form  ngNativeValidate [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off" >
+<div class="form-group">
+<label for="fname">First Name</label>
+<input type="text" required name="fname" formControlName="fname" autocomplete="off" class="form-control" placeholder="First Name"
+onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+</div> <br>
+<div class="form-group">
+<label for="lname">Last Name</label>
+<input type="text" required name="lname" formControlName="lname" autocomplete="off" class="form-control" placeholder="Last Name"
+onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+</div> <br>
+<div class="form-group">
+<label for="email">Email</label>
+<input type="email" required name="email" formControlName="email" autocomplete="off" class="form-control" placeholder="Email"
+oninvalid="this.setCusomValidity('Please enter your email')" oninput="this.setCusomValidity('')">
+</div> <br>
+<div class="form-group">
+<label for="Password">Password</label>
+<input type="password" required name="Password" formControlName="password" autocomplete="off" class="form-control" placeholder="Password" maxlength="15" >
+</div> <br> <br>
+<button type="submit" class="btn btn-success" >Register</button>
+</form>
+</div>
+</div>
+<div class="col-md-3"> 
+</div>
+</div> 

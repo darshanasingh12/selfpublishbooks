@@ -1,0 +1,21 @@
+<body>
+  <form>
+    <div class="container mt-5 p-5">
+    <h3 class="text-center"><b>Admin Login </b></h3> <br> 
+    <div class="form-group text-center ">
+    <label  for="username">Username : </label> <br>
+    <input type="text" name ="userName" [(ngModel)]="loginObj.userName" placeholder="Email or Phone" id="username">
+    </div> <br>
+    <div class="form-group text-center">
+    <label for="password">Password : </label> <br>
+    <input type="password" name ="password" [(ngModel)]="loginObj.password" placeholder="Password" id="password">
+    </div> <br>
+    <div class="form-group text-center">
+    <button class="btn btn-secondary" style="color: black" (click)="onLogin()">Log In</button>
+    </div>
+  </div>
+</form>  
+<div class="container">
+<img src="../../../assets/admin.png" height="250px" width="350px">
+</div>
+ </body>

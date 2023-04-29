@@ -1,0 +1,32 @@
+
+<body>
+  <div class="container mt-3">
+  <div class="addsection">
+    <div class="text-center"><h1>Add New Otp</h1></div> <br>
+    <div style="width:50%;margin:auto">
+      <form ngNativeValidate  [formGroup]="addForm"  class="form">
+        <div class="row">
+          <div class="col-md-6"> Name</div>
+          <div class="col-md-6"><input required class="form-control" type="text" name="name" formControlName="name"
+            onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"></div>
+        </div> <br>
+        <div class="row">
+          <div class="col-md-6">Email</div>
+          <div class="col-md-6"><input type="email" required class="form-control" name="email" formControlName="email"
+            oninvalid="this.setCusomValidity('Please enter your email')" oninput="this.setCusomValidity('')"></div>
+        </div> <br>
+        <div class="row">
+          <div class="col-md-6">Password</div>
+          <div class="col-md-6"><input type="password" required class="form-control" name="password" formControlName="password"></div>
+        </div> <br>
+        
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-success"   (click)="onSubmit()">ADD OTP</button>
+        </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
+</body>

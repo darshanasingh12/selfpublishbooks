@@ -1,0 +1,23 @@
+.calculatorpage img{
+    width: 1365px;
+    height: 655px;
+    object-position: center;
+    object-fit: cover;
+}
+
+.calcontent {
+    left:35%;
+    position: absolute;
+    top: 45%;
+    transform: translate(-50%,-50%);
+}
+
+.calcontent h2{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 25px;
+}
+
+.calcontent p{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+}

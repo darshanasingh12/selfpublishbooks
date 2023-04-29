@@ -1,0 +1,18 @@
+img{
+	width:300px;
+	height: 350px;
+}
+
+body{
+	font-family: 'Times New Roman', Times, serif;
+
+}
+
+.jumbotron p{
+	font-size: 20px;
+}
+
+figcaption{
+	text-align: center;
+	font-size: 20px;
+}

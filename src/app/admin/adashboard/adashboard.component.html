@@ -1,0 +1,18 @@
+<app-anav></app-anav>
+<h3 class="container text-center mt-5">Authors List</h3> <br>
+<div class="container ">
+<table >
+    <tr>
+       <th> Sr. No.</th>
+      <th>First Name</th>
+      <th>Last Name</th>
+      <th>Email</th>
+    </tr>
+    <tr *ngFor="let mydata of data[0]">
+      <td>{{mydata.id}}</td>
+      <td>{{mydata.fname}}</td>
+      <td>{{mydata.lname}}</td>
+      <td>{{mydata.email}}</td>
+    </tr>
+</table>
+</div>

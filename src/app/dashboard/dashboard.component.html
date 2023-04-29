@@ -1,0 +1,108 @@
+<app-main-nav></app-main-nav>
+<app-sidenavbar></app-sidenavbar>
+<body >
+<div class="container mt-5 p-5">
+    <div class="px-3 md:px-8 -mt-30">
+       <div class="container mx-auto max-w-full">
+          <div class="grid grid-cols-1 xl:grid-cols-5">
+             <div class="xl:col-start-1 xl:col-end-4 px-4 mb-14">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="bg-gradient-to-tr from-orange-500 to-orange-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-full h-24 py-4 px-8 justify-start shadow-lg-orange undefined">
+                      <h6 class="uppercase text-gray-200 text-xs font-medium">Overview</h6>
+                      <h2 class="text-white text-2xl">Sales value</h2>
+                   </div>
+                    <div class="p-4 undefined">
+                      <div class="relative h-96">
+                         <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                               <div class=""></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                               <div class=""></div>
+                            </div>
+                         </div> 
+                         <canvas id="line-chart" width="778" height="480" style="display: block; height: 384px; width: 623px;" class="chartjs-render-monitor"></canvas>
+                      </div>
+                   </div>
+                </div>
+             </div>
+             <div class="xl:col-start-4 xl:col-end-6 px-4 mb-14">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="bg-gradient-to-tr from-pink-500 to-pink-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-full h-24 py-4 px-8 justify-start shadow-lg-pink undefined">
+                      <h6 class="uppercase text-gray-200 text-xs font-medium">All Over </h6>
+                      <h2 class="text-white text-2xl">Sales Overview</h2>
+                   </div>
+                    <div class="p-4 undefined">
+                      <div class="relative h-96">
+                          <div class="chartjs-size-monitor">
+                            <div class="chartjs-size-monitor-expand">
+                               <div class=""></div>
+                            </div>
+                            <div class="chartjs-size-monitor-shrink">
+                               <div class=""></div>
+                            </div>
+                         </div> 
+                         <canvas id="bar-chart" width="480" height="480" style="display: block; height: 384px; width: 384px;" class="chartjs-render-monitor"></canvas>
+                      </div>
+                   </div> 
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+    <div class="px-3 md:px-8">
+       <div class="container mx-auto max-w-full">
+          <div class="grid grid-cols-1 lg:grid-cols-2 xl:grid-cols-4 mb-4">
+             <div class="px-4 mb-10">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="flex flex-wrap border-b border-gray-200 undefined">
+                      <div class="bg-gradient-to-tr from-pink-500 to-pink-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-pink mb-0"><span class="material-icons text-white text-3xl leading-none">trending_up</span></div>
+                      <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
+                         <h5 class="text-gray-500 font-light tracking-wide text-base mb-1">Traffic</h5>
+                         <span class="text-3xl text-gray-900">350,897</span>
+                      </div>
+                   </div>
+                   <div class="text-sm text-gray-700 pt-4 flex items-center undefined"><span class="material-icons text-green-500 text-base leading-none">arrow_upward</span><span class="text-green-500 ml-1 mr-2">3.48</span><span class="font-light whitespace-nowrap">Since last month</span></div>
+                </div>
+             </div>
+             <div class="px-4 mb-10">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="flex flex-wrap border-b border-gray-200 undefined">
+                      <div class="bg-gradient-to-tr from-orange-500 to-orange-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-orange mb-0"><span class="material-icons text-white text-3xl leading-none">groups</span></div>
+                      <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
+                         <h5 class="text-gray-500 font-light tracking-wide text-base mb-1">New Users</h5>
+                         <span class="text-3xl text-gray-900">2,356</span>
+                      </div>
+                   </div>
+                   <div class="text-sm text-gray-700 pt-4 flex items-center undefined"><span class="material-icons text-red-500 text-base leading-none">arrow_downward</span><span class="text-red-500 ml-1 mr-2">3.48</span><span class="font-light whitespace-nowrap">Since last week</span></div>
+                </div>
+             </div>
+             <div class="px-4 mb-10">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="flex flex-wrap border-b border-gray-200 undefined">
+                      <div class="bg-gradient-to-tr from-purple-500 to-purple-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-purple mb-0"><span class="material-icons text-white text-3xl leading-none">paid</span></div>
+                      <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
+                         <h5 class="text-gray-500 font-light tracking-wide text-base mb-1">Sales</h5>
+                         <span class="text-3xl text-gray-900">924</span>
+                      </div>
+                   </div>
+                   <div class="text-sm text-gray-700 pt-4 flex items-center undefined"><span class="material-icons text-orange-500 text-base leading-none">arrow_downward</span><span class="text-orange-500 ml-1 mr-2">1.10</span><span class="font-light whitespace-nowrap">Since yesterday</span></div>
+                </div>
+             </div>
+             <div class="px-4 mb-10">
+                <div class="w-full bg-white rounded-xl overflow-hdden shadow-md p-4 undefined">
+                   <div class="flex flex-wrap border-b border-gray-200 undefined">
+                      <div class="bg-gradient-to-tr from-blue-500 to-blue-700 -mt-10 mb-4 rounded-xl text-white grid items-center w-24 h-24 py-4 px-4 justify-center shadow-lg-blue mb-0"><span class="material-icons text-white text-3xl leading-none">poll</span></div>
+                      <div class="w-full pl-4 max-w-full flex-grow flex-1 mb-2 text-right undefined">
+                         <h5 class="text-gray-500 font-light tracking-wide text-base mb-1">Performance</h5>
+                         <span class="text-3xl text-gray-900">49,65%</span>
+                      </div>
+                   </div>
+                   <div class="text-sm text-gray-700 pt-4 flex items-center undefined"><span class="material-icons text-green-500 text-base leading-none">arrow_upward</span><span class="text-green-500 ml-1 mr-2">12</span><span class="font-light whitespace-nowrap">Since last month</span></div>
+                </div>
+             </div>
+          </div>
+       </div>
+    </div>
+  </div>
+</body>

@@ -1,0 +1,31 @@
+<body>
+<div class="container mt-3">
+  <div class="text-center"><h1>Edit Otp</h1></div>
+  <div style="width:50%;margin:auto">
+    <form [formGroup]="addForm" ngNativeValidate class="form">  
+      <input type="hidden" name="id" formControlName="id">
+    
+      <div class="row">
+        <div class="col-md-6">Last Name</div>
+        <div class="col-md-6"><input class="form-control" type="text" name="name" formControlName="name"
+          onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)"></div>
+      </div>  <br>
+      <div class="row">
+        <div class="col-md-6">Email</div>
+        <div class="col-md-6"><input type="email" class="form-control" name="email" formControlName="email"></div>
+      </div> <br>
+      <div class="row">
+        <div class="col-md-6">Password</div>
+        <div class="col-md-6"><input type="password" class="form-control" name="password" formControlName="password"></div>
+      </div> <br>
+        
+    
+        <div class="row">
+          <div class="col-md-12">
+            <button class="btn btn-success"   (click)="onEdit()">EDIT STUDENT</button>
+            </div>
+        </div>
+      </form>
+    </div>
+    </div>
+  </body>

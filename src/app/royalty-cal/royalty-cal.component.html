@@ -1,0 +1,32 @@
+<app-main-nav></app-main-nav>
+<app-sidenavbar></app-sidenavbar>
+
+<section class="calculatorpage ">
+    <img src="../../assets/mybackground.webp">
+    <div class="calcontent ">
+        <h2 class="p-4"><b>Royalty Calculator</b></h2>
+    <div class="container ">
+    
+    <p>
+    Selling Price Of Book : <br>
+    <input class="form-control" type ="number" name="pbook" placeholder="eg: 200" #subtotal>
+    </p>
+    
+    <p>
+    Royalty % : <br>
+    <input class="form-control" type ="number" name="rcent" placeholder="eg: 80" #prct>
+    </p>
+    
+    <p>  
+    Books sold :<br>
+    <input class="form-control" type ="number" name="sold" placeholder="eg: 10" #nbr>
+    </p>
+    
+    
+    <button class="btn btn-dark" (click) = "toggleButton (subtotal.value, prct.value, nbr.value)">Calculate</button> <br> <br>
+    
+    <h2 *ngIf= "isDisplay">Income Per Book : {{resulttotal}} </h2> 
+    <h2 *ngIf= "isDisplay">Total Income : {{resultpers}} </h2>
+    </div>
+    </div>
+</section>

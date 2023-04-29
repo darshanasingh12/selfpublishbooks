@@ -1,0 +1,54 @@
+<app-main-nav></app-main-nav>
+<app-sidenavbar></app-sidenavbar>
+<div id="main-wrapper" class="container">
+<div class="row justify-content-center">
+<div class="col-xl-10">
+<div class="card border-0">
+<div class="card-body p-0">
+<div class="row no-gutters">
+<div class="col-lg-6">
+<div class="p-3">
+<div class="mb-3">
+    <h3 class="h4 font-weight-bold text-theme">Publish Your Book</h3>
+</div>
+<h6 class="h5 mb-0">Please note that it may take some time for our team to respond</h6>
+<p class="text-muted mt-2 mb-3">Keep the summary short and meaningful </p>
+
+<form [formGroup]="addForm" ngNativeValidate autocomplete="off" >
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="First Name" formControlName="fname" required
+    onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+</div> <br>
+<div class="form-group">
+    <input type="text" class="form-control" placeholder="Last Name" formControlName="lname" required
+    onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+</div> <br>
+<div class="form-group">
+    <input type="email" class="form-control" placeholder="Your Email" formControlName="aemail" required
+    oninvalid="this.setCusomValidity('Please enter your email')" oninput="this.setCusomValidity('')" >
+</div> <br>
+<div class="form-group">
+    <input type="text" required class="form-control" placeholder="Book Title" formControlName="btitle" maxlength="25">
+</div> <br> 
+<div class="form-group">
+    <input type="text" required class="form-control" placeholder="Book Genre" formControlName="bgenre" 
+    onkeypress="return (event.charCode > 64 && event.charCode < 91) || (event.charCode > 96 && event.charCode < 123)">
+</div> <br>
+<div class="form-group">
+    <textarea type="text" required class="form-control" placeholder="Book Summary" formControlName="bsummary" maxlength="200" ></textarea>
+</div> <br>
+<button type="submit" class="btn btn-theme" (click)="onSubmit()">Submit</button>
+</form>
+</div>
+</div>
+<div class="col-lg-6 d-none d-lg-inline-block">
+    <div class="account-block rounded-right">
+        <div class="overlay rounded-right"></div>
+    </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>

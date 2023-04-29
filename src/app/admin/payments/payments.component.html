@@ -1,0 +1,21 @@
+
+<app-anav></app-anav>
+<div class="container mt-4">
+Applications
+<table class="table table-stripped">
+    <thead class="list">
+        <th>Sr.No.</th>
+        <th>Book Name</th>
+        <th>Package</th>
+        <th>Author Name</th>
+    </thead>
+    <tbody>
+        <tr *ngFor="let payment of payments; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{payment.bname}}</td>
+            <td>{{payment.package}}</td>
+            <td>{{payment.cname}}</td>
+        </tr>
+    </tbody>
+</table>
+</div>

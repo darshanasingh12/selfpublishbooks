@@ -1,0 +1,30 @@
+<app-anav></app-anav>
+<div class="container mt-4">
+<table class="table table-stripped">
+    <thead class="list">
+        <th>Sr.No.</th>
+        <th> First Name</th>
+        <th> Last Name</th>
+        <th>Email</th>
+        <th>Title</th>
+        <th>Genre</th>
+        <th>Summary</th>
+        <th>Status</th>
+        <th>Action</th>
+    </thead>
+
+    <tbody>
+        <tr *ngFor="let application of applications; let i = index;">
+            <td>{{i+1}}</td>
+            <td>{{application.fname}}</td>
+            <td>{{application.lname}}</td>
+            <td>{{application.aemail}}</td>
+            <td>{{application.btitle}}</td>
+            <td>{{application.bgenre}}</td>
+            <td>{{application.bsummary}}</td>
+            <td>{{application.status}}</td>
+            <td> <a href="aedit/{{application.id}}" class="btn btn-success ">EDIT</a></td>
+        </tr>
+    </tbody>
+</table>
+</div>
